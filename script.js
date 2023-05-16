@@ -8,11 +8,13 @@ function controllaNumeri(a, b) {
     } else {
       return false;
     }
-  } console.log(controllaNumeri(25,25))
+  } console.log(controllaNumeri(25,25)) 
 
 /* 2) Crea una funzione che rimuova il carattere ad una specifica posizione da una stringa.
      Passa la stringa e la posizione come parametri e ritorna la stringa modificata.
 */
+array[stringaUno, stringaDue]
+function rimuoviCarattere()
 
 
 /* 3) Crea una funzione che controlli se due numeri siano compresi tra 40 e 60 o tra 70 e 100.
