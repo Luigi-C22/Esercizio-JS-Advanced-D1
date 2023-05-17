@@ -1,6 +1,6 @@
 /* 1) Crea una funzione che controlli due numeri interi.
      Ritorna "true" se uno dei due è 50 o se la somma dei due è 50
-*/
+
 
 function controllaNumeri(a, b) {
     if (a === 50 || b === 50 || a + b === 50) {
@@ -9,36 +9,100 @@ function controllaNumeri(a, b) {
       return false;
     }
   } console.log(controllaNumeri(25,25)) 
-
+*/
 /* 2) Crea una funzione che rimuova il carattere ad una specifica posizione da una stringa.
      Passa la stringa e la posizione come parametri e ritorna la stringa modificata.
-*/
-array[stringaUno, stringaDue]
-function rimuoviCarattere()
 
+
+function rimuoviCarattere(stringa, posizione) {
+    if (posizione < 0 || posizione >= stringa.length) {
+      // Posizione non valida, ritorna la stringa originale
+      return stringa;
+    } else {
+      return stringa.slice(0, posizione) + stringa.slice(posizione + 1);
+    }
+  }
+console.log(rimuoviCarattere("epicode",3));*/
 
 /* 3) Crea una funzione che controlli se due numeri siano compresi tra 40 e 60 o tra 70 e 100.
      Ritorna 'true' se rispecchiano queste condizioni, altrimenti ritorna 'false'.
-*/
+     
+
+     function verificaNumeri(numero1, numero2) {
+        if (
+          ((numero1 >= 40 && numero1 <= 60)  ||
+          (numero2 >= 70 && numero2 <= 100))
+        ) {
+          return true;
+        } else {
+          return false;
+        }
+      } console.log(verificaNumeri(40, 80))   */
 
 /* 4) Crea la funzione che accetti un nome di città come parametro e ritorni il nome stesso se inizia con "Los" o "New", 
      altrimenti ritorni 'false'.
-*/
+
+function controllaNome(nomeCitta) {
+  if (nomeCitta.startsWith("Los") || nomeCitta.startsWith("New")) {
+    return nomeCitta;
+  } else {
+    return false;
+  }
+}console.log(controllaNome("New Milano"))*/
 
 /* 5) Crea una funzione che calcoli e ritorni la somma di tutti gli elementi di un array.
      L'array deve essere passato come parametro.
-*/
+
+  let array = [2,5,3,9,11];
+  let totale = 0;
+  function sommaElementi(){
+      for (let i = 0; i < array.length; i++) {
+      totale += array[i];
+      }
+      return totale
+  }
+  console.log(sommaElementi(totale));*/
 
 /* 6) Crea una funzione che controlli che un array NON contenga i numeri 1 o 3.
      Se NON li contiene, ritorna 'true', altrimenti 'false'.
-*/
 
+
+let numeri=[6,2,6,8,9,10];
+function controllaNumeri(){
+    for ( let i=0; i< numeri.length; i++){
+        
+        if(!numeri.includes(1) && !numeri.includes(3)){
+            return true
+        }else {
+            return false
+        }
+    }
+}
+console.log(controllaNumeri());
+*/
 /* 7) Crea una funzione per trovare il tipo di un angolo i cui gradi sono passati come parametro.
         Angolo acuto: meno di 90° => ritorna "acuto"
         Angolo ottuso: tra 90° e 180° gradi => ritorna "ottuso"
         Angolo retto: 90° => ritorna "retto"
         Angolo piatto: 180° => ritorna "piatto" 
 */
+function angle(deg){
+  if(deg > 0 && deg <= 90){
+  return "Acuto";
+} else if 
+  (deg > 90 && deg < 180){
+    return "Ottuso";
+  }  else if 
+     (deg === 90){
+      return "Retto";
+  }else if
+      (deg === 180){
+        return "Piatto";
+  } else {
+      return "Valore non valido";
+      }
+}
+console.log(angle(16));
 
 /* 8) Crea una funzione che crei un acronimo a partire da una frase.
        Es. "Fabbrica Italiana Automobili Torino" deve ritornare "FIAT".
@@ -102,9 +166,14 @@ N = 2
 
 N = 3
 
-`[[1, 2, 3],[8, 9, 4],[7, 6, 5]]`
+`[[1, 2, 3],
+  [8, 9, 4],
+  [7, 6, 5]]`
 
 N = 4
 
-`[[1, 2, 3, 4],[12, 13, 14, 5],[11, 16, 15, 6],[10, 9, 8, 7]]`
+`[[1, 2, 3, 4],
+ [12, 13, 14, 5],
+ [11, 16, 15, 6],
+ [10, 9, 8, 7]]`
 */
