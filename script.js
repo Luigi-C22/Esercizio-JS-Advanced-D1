@@ -85,7 +85,7 @@ console.log(controllaNumeri());
         Angolo ottuso: tra 90° e 180° gradi => ritorna "ottuso"
         Angolo retto: 90° => ritorna "retto"
         Angolo piatto: 180° => ritorna "piatto" 
-*/
+
 function angle(deg){
   if(deg > 0 && deg <= 90){
   return "Acuto";
@@ -102,12 +102,24 @@ function angle(deg){
       return "Valore non valido";
       }
 }
-console.log(angle(16));
+console.log(angle(16));*/
 
 /* 8) Crea una funzione che crei un acronimo a partire da una frase.
        Es. "Fabbrica Italiana Automobili Torino" deve ritornare "FIAT".
 */
+function creaAcronimo(frase) {
+  const parole = frase.split(' ');
+  let acronimo = '';
 
+  for (let i = 0; i < parole.length; i++) {
+    acronimo += parole[i][0].toUpperCase();
+  }
+
+  return acronimo;
+} 
+const frase = "Bayerische Motoren Werke";
+const acronimo = creaAcronimo(frase);
+console.log(acronimo);
 
 
 //ESERCIZI EXTRA
