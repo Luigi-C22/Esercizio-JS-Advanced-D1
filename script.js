@@ -106,7 +106,7 @@ console.log(angle(16));*/
 
 /* 8) Crea una funzione che crei un acronimo a partire da una frase.
        Es. "Fabbrica Italiana Automobili Torino" deve ritornare "FIAT".
-*/
+
 function creaAcronimo(frase) {
   const parole = frase.split(' ');
   let acronimo = '';
@@ -119,7 +119,7 @@ function creaAcronimo(frase) {
 } 
 const frase = "Bayerische Motoren Werke";
 const acronimo = creaAcronimo(frase);
-console.log(acronimo);
+console.log(acronimo);*/
 
 
 //ESERCIZI EXTRA
